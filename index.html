@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style-test.css">
 <title>Nerds Студия Дизаина</title>
 </head>
 <body>
-	<header class="main-heder">
-		<div class="container">
+	<header class="container">
 			<div class="logo">
 				<img src="img/logo.png" alt="Nerds">
 			</div>
 			<nav class="main-menu">
-				<ul class="main-menu-list">
+				<ul class="main-menu__list">
 					<li>
 						<a href="#">Студия</a>
 					</li>
@@ -24,52 +25,77 @@
 					<li>
 						<a href="#">Контакты</a>
 					</li>
+					<li>
+						<a href="#">Корзина</a>
+					</li>
 				</ul>
 			</nav>
-			<div class="card">
-				<a href="#">Корзина</a>
-			</div>
-			<section class="slaider">
-				<div class="slide-control">
-					<input type="radio" id="btn-1" name="btn-radio" checked>
-					<input type="radio" id="btn-2" name="btn-radio">
-					<input type="radio" id="btn-3" name="btn-radio">					
+			<section class="sliders">
+				
+				<input type="radio" id="slide-1" name="radio-sliders" checked>
+				<label for="slide-1">111</label>
+				<div class="slider">
+					<div class="slider__left">
+						<h3>Долго, дорого, скрупулезно</h3>
+						<p>
+							Математически выверенный дизайн для вашего сайта или мобильного приложения.
+						</p>
+						<a class="btn btn-info" href="#">Узнать больше</a>
+					</div>
+					<img class="slider__img" src="img/slide1.png" alt="Первый слайд">
 				</div>
-				<div class="slide">
-					<h3>Долго, дорого, скрупулезно</h2>
-					<p>
-						Математически выверенный дизайн для вашего сайта или мобильного приложения.
-					</p>
-					<a class="btn btn-info" href="#">Узнать больше</a>
+
+				<input type="radio" id="slide-2" name="radio-sliders" checked>
+				<label for="slide-2">222</label>
+				<div class="slider">
+					<div class="slider__left">
+						<h3>Долго, дорого, скрупулезно</h3>
+						<p>
+							Математически выверенный дизайн для вашего сайта или мобильного приложения.
+						</p>
+						<a class="btn btn-info" href="#">Узнать больше</a>
+					</div>
+					<img class="slider__img" src="img/slide2.png" alt="Второй слайд">
 				</div>
-			</div>
-			<div class="features-gall">
-				<figure class="features-gall-item">
-					<img src="#">
-				</figure>
+
+				<input type="radio" id="slide-3" name="radio-sliders" checked>
+				<label for="slide-3">333</label>
+				<div class="slider">
+					<div class="slider__left">
+						<h3>Долго, дорого, скрупулезно</h3>
+						<p>
+							Математически выверенный дизайн для вашего сайта или мобильного приложения.
+						</p>
+						<a class="btn btn-info" href="#">Узнать больше</a>
+					</div>
+					<img class="slider__img" src="img/slide3.png" alt="Третий слайд">
+				</div>
+
 			</section>
-		</div>
 	</header>
+
 	<main class="container">
-		<section class="index-content">
-			<div class="index-content-sites">
-				<img class="index-content-img" src="img/site-index.jpg" alt="Веб-сайты">
+		<section class="product">
+			<div class="product__item">
+				<img class="product__item__img" src="img/site-index.jpg" alt="Веб-сайты">
 				<h2>Веб-сайты</h2>
 				<p>
 					Мир никогда не будет прежним после того как увидит наш сайт!
 				</p>
-				<a class="btn btn-order" href="#">Заказать</a>
+				<a class="btn btn-red" href="#">Заказать</a>
 			</div>
-			<div class="index-content-application">
-				<img class="index-content-img" src="img/application-index.jpg" alt="Приложения">
+
+			<div class="product__item">
+				<img class="product__item__img" src="img/application-index.jpg" alt="Приложения">
 				<h2>Приложения</h2>
 				<p>
 					Покорите топ-10 приложений в AppStore и Google Play
 				</p>
-				<a class="btn btn-order" href="#">Заказать</a>
+				<a class="btn btn-red" href="#">Заказать</a>
 			</div>
-			<div class="index-content-presentation">
-				<img class="index-content-img" src="img/presentation-index.jpg" alt="Презентации">
+
+			<div class="product__item">
+				<img class="product__item__img" src="img/presentation-index.jpg" alt="Презентации">
 				<h2>Презентации</h2>
 				<p>
 					Вы даже не представляете, насколько вы изумительны!
@@ -77,54 +103,51 @@
 				<a class="btn btn-order" href="#">Заказать</a>
 			</div>
 		</section>
-		<section class="nerds-info">
-			<div class="nerds-info-slogan">
+
+		<section class="about-us">
+			<div class="about-us__offer">
 				<h2>Мы – маленькая, но гордая дизайн-студия из Краснодара.</h2>
 				<p>
 					Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
 				</p>
-			</div>
-			<div class="nerds-info-order">
-				<p>Выполняем заказы на разработку:</p>
+				<h3>Выполняем заказы на разработку:</h3>
 				<ul>
 					<li>Веб-сайты любой сложности</li>
 					<li>Мобильные приложения для IOS и Android</li>
 					<li>Слайдшоу и видео для корпоративных презентаций</li>
 				</ul>
 			</div>
-		</section>
-		<aside class="the-nerds">
-			<img src="img/logo.png">
-			<p>Since 2004</p>
-			<div>
-				<p>Как мы работаем:</p>
+		  <div class="about-us__how-work">
+				<img src="img/logo.png" alt="Nerds">
+				<span>Since 2004</span>
+				<h3>Как мы работаем:</h3>
 				<ul>
 					<li>С самоотдачей 146%</li>
 					<li>Соблюдая сроки на 100%</li>
 					<li>По предоплате 50%</li>
 				</ul>
 			</div>
-		</aside>
-		<section class="partner">
-			<div class="partner-item">
+		</section>
+		<section class="partners">
+			<div class="partners__item">
 				<a href="#">Glukhanko
-					<img src="img/glukhanko.png">
+					<img src="img/glukhanko.png" alt="Glukhanko">
 				</a>
 			</div>
-			<div class="partner-item">
+			<div class="partners__item">
 				<a href="#">Html academy
-					<img src="img/html-academy.png">
+					<img src="img/html-academy.png" alt="HTML Academy">
 				</a>
 				</div>
-			<div class="partner-item">
+			<div class="partners__item">
 				<a href="#">Barbershop Borodinski
-					<img src="img/barbershop-borodinski.png">
+					<img src="img/barbershop-borodinski.png" alt="Borodinski">
 				</a>				
 			</div>
 		</section>
 		<section class="map">
 			<img src="img/map.jpg" alt="Как нас найти">
-			<div class="where-it">
+			<div class="map__address">
 				<b>Nerds desing studio</b>
 				<p>
 					191186, Санкт-Петербург,

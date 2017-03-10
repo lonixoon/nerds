@@ -1,0 +1,12 @@
+html,
+body {
+  background: #ffffff;
+}
+
+header {
+  background: #EEEEEE;
+}
+
+.main-menu__list {
+  display: flex;
+}
