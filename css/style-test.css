@@ -2,11 +2,91 @@ html,
 body {
   background: #ffffff;
 }
+ * {
+    box-sizing: border-box;
+ }
 
 header {
+  display: flex;
+  /*flex-direction: column;*/
   background: #EEEEEE;
+}
+
+.container {
+  /*display: flex;*/
+  /*flex-direction: column;  */
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 900px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-menu__list {
   display: flex;
 }
+
+.slider {
+  position: relative;
+  display: flex;
+}
+
+  .slider__radio1 {
+    position: absolute;
+    display: inline-flex;
+    left: 48%;
+    bottom: 70px;
+  }
+  
+  .slider__radio2 {
+    position: absolute;
+    display: inline-flex;
+    left: 50%;
+    bottom: 70px;
+  }
+
+  .slider__radio3 {
+    position: absolute;
+    display: inline-flex;
+    left: 52%;
+    bottom: 70px;
+
+  }
+  .slider__slide {
+    display: none;
+  }
+
+  .slider input[type=radio]:checked + label + .slider__slide {
+    display: flex;
+  }
+
+.product__item {
+  width: 240px;
+}
+
+.about-us__offer {
+  width: 620px;
+}
+
+.about-us__how-work {
+  width: 240px;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  width: 1199px;
+  min-height: 416px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 160px;
+  background: url(../img/map.jpg) no-repeat;
+}
+
+  .map__address {
+    width: 250px;
+    background: #ffffff;
+  }
