@@ -1,20 +1,51 @@
+/*Начало Общие декоративные элементы для сайта*/
+.btn {
+  display: inline-flex;
+  padding: 10px 40px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #FB565A;
+}
+
+.btn:hover {
+  background-color: #D6494D;  
+}
+
+.btn:active {
+  background-color: #B63538;
+  box-shadow: inset 0 2px 0 #9B2D30;
+}
+/*Конец Общие декоративные элементы для сайта*/
+
 html,
 body {
+  font-size: 16px;
+  line-height: 1.3;
   background: #ffffff;
 }
  * {
     box-sizing: border-box;
+    line-height: 1.3;
  }
+
+h2 {
+  font-size: 36px;
+}
+
+h3,
+h4 {
+  text-transform: uppercase;
+}
 
 header {
   display: flex;
-  /*flex-direction: column;*/
   background: #EEEEEE;
 }
 
 .container {
-  /*display: flex;*/
-  /*flex-direction: column;  */
   margin: 0 auto;
   padding: 0 10px;
   width: 900px;
@@ -27,11 +58,33 @@ header {
 
 .main-menu__list {
   display: flex;
+  list-style: none;
 }
+
+  .main-menu__list li {
+    margin-right: 40px;
+  }
+
+  .main-menu__list li:last-child {
+    margin-right: 0px;
+    margin-left: 50px;
+  }
+
+/*  .main-menu__list_card {
+    margin-right: 0px
+    margin-left: 60px;
+  }*/
+
+  .main-menu__list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
 
 .slider {
   position: relative;
   display: flex;
+  min-height: 319px;
 }
 
   .slider__radio1 {
@@ -63,17 +116,42 @@ header {
     display: flex;
   }
 
-.product__item {
-  width: 240px;
+  .slide__img {
+    align-self: center;
+  }
+
+/*  .slide__left {
+    padding-bottom: 200px;
+  }*/
+.product {
+  margin-top: 40px;
 }
 
-.about-us__offer {
-  width: 620px;
+  .product__item {
+    width: 240px;
+  }
+
+.about-us {
+  margin-top: 40px;
 }
 
-.about-us__how-work {
-  width: 240px;
+  .about-us__offer {
+    width: 620px;
+  }
+
+  .about-us__how-work {
+    width: 240px;
+  }
+
+.partners__item {
+  font-size: 0;
+  opacity: 0.3;
 }
+
+.partners__item:hover {
+  opacity: 1;
+}
+
 
 .map {
   display: flex;
@@ -88,5 +166,39 @@ header {
 
   .map__address {
     width: 250px;
+    padding-left: 20px;
+    padding-bottom: 25px;
     background: #ffffff;
+  }
+
+.social__btn {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  margin-right: 25px;
+  border: 1px solid #E1E1E1;
+  border-radius: 50%;
+  font-size: 0;
+  background: #E1E1E1 url(../img/icon-social.png) no-repeat;
+}
+
+.social__btn:hover {
+  background-color: #FB565A;
+}
+
+.social__btn:active {
+  background-color: #D6494D;  
+  box-shadow: inset 0 2px 0 #B63E42;
+}
+
+  .social__btn_vk {
+    background-position: 16px 45%;
+  }
+
+  .social__btn_fb {
+    background-position: -75px 45%;
+  }
+
+  .social__btn_inst {
+    background-position: -164px 45%;
   }

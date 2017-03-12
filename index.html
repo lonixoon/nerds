@@ -14,7 +14,7 @@
 					<img src="img/logo.png" alt="Nerds" width="139" height="56">
 				</div>
 				<nav class="main-menu">
-					<ul class="main-menu__list">
+					<ul class="main-menu__list flex">
 						<li>
 							<a href="#">Студия</a>
 						</li>
@@ -28,7 +28,7 @@
 							<a href="#">Контакты</a>
 						</li>
 						<li>
-							<a class="card" href="#">Корзина</a>
+							<a class="main-menu__list_card" href="#">Корзина</a>
 						</li>
 					</ul>
 				</nav>
@@ -39,39 +39,39 @@
 				<label for="slide-1"></label>
 				<div class="slider__slide">
 					<div class="slide__left">
-						<h3>Долго, дорого, скрупулезно</h3>
+						<h2>Долго, дорого, скрупулезно</h2>
 						<p>
 							Математически выверенный дизайн для вашего сайта или мобильного приложения.
 						</p>
-						<a class="btn btn-info" href="#">Узнать больше</a>
+						<a class="btn" href="#">Узнать больше</a>
 					</div>
-					<img class="slide__img" src="img/slide1.png" alt="Первый слайд">
+					<img class="slide__img" src="img/slide1.png" alt="Первый слайд" width="338" height="231">
 				</div>
 
 				<input class="slider__radio2" type="radio" id="slide-2" name="radio-slider">
 				<label for="slide-2"></label>
 				<div class="slider__slide">
 					<div class="slide__left">
-						<h3>Любите ли вы математику, как любим ее мы?</h3>
+						<h2>Любите ли вы математику, как любим ее мы?</h2>
 						<p>
 							Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.
 						</p>
 						<a class="btn btn-info" href="#">Узнать больше</a>
 					</div>
-					<img class="slide__img" src="img/slide2.png" alt="Второй слайд">
+					<img class="slide__img" src="img/slide2.png" alt="Второй слайд" width="230" height="249">
 				</div>
 
 				<input class="slider__radio3" type="radio" id="slide-3" name="radio-slider">
 				<label for="slide-3"></label>
 				<div class="slider__slide">
 					<div class="slide__left">
-						<h3>Только наркотики, только хардкор!</h3>
+						<h2>Только наркотики, только хардкор!</h2>
 						<p>
 							Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.
 						</p>
 						<a class="btn btn-info" href="#">Узнать больше</a>
 					</div>
-					<img class="slide__img" src="img/slide3.png" alt="Третий слайд">
+					<img class="slide__img" src="img/slide3.png" alt="Третий слайд" width="333" height="319">
 				</div>
 			</section>
 		</div>
@@ -82,7 +82,7 @@
 			<section class="product flex">
 				<div class="product__item">
 					<img class="product__item__img" src="img/site-index.jpg" alt="Веб-сайты">
-					<h2>Веб-сайты</h2>
+					<h3>Веб-сайты</h3>
 					<p>
 						Мир никогда не будет прежним после того как увидит наш сайт!
 					</p>
@@ -91,7 +91,7 @@
 
 				<div class="product__item">
 					<img class="product__item__img" src="img/application-index.jpg" alt="Приложения">
-					<h2>Приложения</h2>
+					<h3>Приложения</h3>
 					<p>
 						Покорите топ-10 приложений в AppStore и Google Play
 					</p>
@@ -100,7 +100,7 @@
 
 				<div class="product__item">
 					<img class="product__item__img" src="img/presentation-index.jpg" alt="Презентации">
-					<h2>Презентации</h2>
+					<h3>Презентации</h3>
 					<p>
 						Вы даже не представляете, насколько вы изумительны!
 					</p>
@@ -114,7 +114,7 @@
 					<p>
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
 					</p>
-					<h3>Выполняем заказы на разработку:</h3>
+					<h4>Выполняем заказы на разработку:</h4>
 					<ul>
 						<li>Веб-сайты любой сложности</li>
 						<li>Мобильные приложения для IOS и Android</li>
@@ -124,7 +124,7 @@
 			  <div class="about-us__how-work">
 					<img src="img/logo.png" alt="Nerds">
 					<span>Since 2004</span>
-					<h3>Как мы работаем:</h3>
+					<h4>Как мы работаем:</h4>
 					<ul>
 						<li>С самоотдачей 146%</li>
 						<li>Соблюдая сроки на 100%</li>
@@ -152,7 +152,7 @@
 		</div>
 		<section class="map">
 			<div class="map__address">
-				<b>Nerds desing studio</b>
+				<h4>Nerds desing studio</h4>
 				<p>
 					191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д 19.8<br>
@@ -165,12 +165,12 @@
 	<footer class="main-footer">
 		<div class="container flex">
 			<div class="social">
-				<a href="#">Вконтакте</a>
-				<a href="#">Фейсбук</a>
-				<a href="#">Инстаграм</a>
+				<a class="social__btn social__btn_vk" href="#">Вконтакте</a>
+				<a class="social__btn social__btn_fb" href="#">Фейсбук</a>
+				<a class="social__btn social__btn_inst" href="#">Инстаграм</a>
 			</div>
 			<div class="be-friend">
-				<p>Давай дружить, это выгодно!</p>
+				<h2>Давай дружить, это выгодно!</h2>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
