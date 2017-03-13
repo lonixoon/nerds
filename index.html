@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style-test.css">
 <title>Nerds Студия Дизаина</title>
 </head>
@@ -39,9 +40,11 @@
 				<label for="slide-1"></label>
 				<div class="slider__slide">
 					<div class="slide__left">
-						<h2>Долго, дорого, скрупулезно</h2>
-						<p>
-							Математически выверенный дизайн для вашего сайта или мобильного приложения.
+						<h2>Долго, дорого,
+						<br>скрупулезно</h2>
+						<p class="slide__left__body">
+							Математически выверенный дизайн
+							<br>для вашего сайта или мобильного приложения.
 						</p>
 						<a class="btn" href="#">Узнать больше</a>
 					</div>
@@ -53,8 +56,9 @@
 				<div class="slider__slide">
 					<div class="slide__left">
 						<h2>Любите ли вы математику, как любим ее мы?</h2>
-						<p>
-							Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.
+						<p class="slide__left__body">
+							Нашим дизайнерам мы удаляем нейроны, ответственные
+							<br>за креатив, чтобы дать им возможность все просчитать.
 						</p>
 						<a class="btn btn-info" href="#">Узнать больше</a>
 					</div>
@@ -66,7 +70,7 @@
 				<div class="slider__slide">
 					<div class="slide__left">
 						<h2>Только наркотики, только хардкор!</h2>
-						<p>
+						<p class="slide__left__body">
 							Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.
 						</p>
 						<a class="btn btn-info" href="#">Узнать больше</a>
@@ -79,20 +83,20 @@
 
 	<main>
 		<div class="container">
-			<section class="product flex">
+			<section class="product flex gray-line">
 				<div class="product__item">
 					<img class="product__item__img" src="img/site-index.jpg" alt="Веб-сайты">
-					<h3>Веб-сайты</h3>
-					<p>
+					<h3 class="product__item__title">Веб-сайты</h3>
+					<p class="product__item__body">
 						Мир никогда не будет прежним после того как увидит наш сайт!
 					</p>
-					<a class="btn btn-red" href="#">Заказать</a>
+					<a class="btn" href="#">Заказать</a>
 				</div>
 
 				<div class="product__item">
 					<img class="product__item__img" src="img/application-index.jpg" alt="Приложения">
-					<h3>Приложения</h3>
-					<p>
+					<h3 class="product__item__title">Приложения</h3>
+					<p class="product__item__body">
 						Покорите топ-10 приложений в AppStore и Google Play
 					</p>
 					<a class="btn btn-red" href="#">Заказать</a>
@@ -100,21 +104,22 @@
 
 				<div class="product__item">
 					<img class="product__item__img" src="img/presentation-index.jpg" alt="Презентации">
-					<h3>Презентации</h3>
-					<p>
+					<h3 class="product__item__title">Презентации</h3>
+					<p class="product__item__body">
 						Вы даже не представляете, насколько вы изумительны!
 					</p>
 					<a class="btn btn-order" href="#">Заказать</a>
 				</div>
 			</section>
 
-			<section class="about-us flex">
+			<section class="about-us flex gray-line">
 				<div class="about-us__offer">
-					<h2>Мы – маленькая, но гордая дизайн-студия из Краснодара.</h2>
+					<h2>Мы – маленькая, но гордая 
+					<br>дизайн-студия из Краснодара.</h2>
 					<p>
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
 					</p>
-					<h4>Выполняем заказы на разработку:</h4>
+					<span class="about-us__offer__title">Выполняем заказы на разработку:</span>
 					<ul>
 						<li>Веб-сайты любой сложности</li>
 						<li>Мобильные приложения для IOS и Android</li>
@@ -122,9 +127,9 @@
 					</ul>
 				</div>
 			  <div class="about-us__how-work">
-					<img src="img/logo.png" alt="Nerds">
-					<span>Since 2004</span>
-					<h4>Как мы работаем:</h4>
+					<img class="bout-us__how-work__logo" src="img/logo.png" alt="Nerds" width="187" height="75">
+					<span class="about-us__how-work__since">Since 2004</span>
+					<span class="about-us__how-work__title">Как мы работаем:</span>
 					<ul>
 						<li>С самоотдачей 146%</li>
 						<li>Соблюдая сроки на 100%</li>
@@ -132,7 +137,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="partners flex">
+			<section class="partners flex gray-line">
 				<div class="partners__item">
 					<a href="#">Glukhanko
 						<img src="img/glukhanko.png" alt="Glukhanko">
@@ -149,30 +154,33 @@
 					</a>				
 				</div>
 			</section>
-		</div>
-		<section class="map">
+		</div>		
+	</main>
+	<footer class="main-footer">
+	<section class="map">
 			<div class="map__address">
-				<h4>Nerds desing studio</h4>
-				<p>
+				<span class="map__address__title">Nerds desing studio</span>
+				<p class="map__address__body">
 					191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д 19.8<br>
 					тел. +7 (812) 275-75-75
 				</p>
-				<a class="btn" href="#">Напишите нам</a>
+				<a class="btn map__address__btn" href="#">Напишите нам</a>
 			</div>
 		</section>
-	</main>
-	<footer class="main-footer">
-		<div class="container flex">
-			<div class="social">
-				<a class="social__btn social__btn_vk" href="#">Вконтакте</a>
-				<a class="social__btn social__btn_fb" href="#">Фейсбук</a>
-				<a class="social__btn social__btn_inst" href="#">Инстаграм</a>
-			</div>
-			<div class="be-friend">
-				<h2>Давай дружить, это выгодно!</h2>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
+		<div class="container">
+			<section class="social flex">
+				<div class="social__buttons">
+					<a class="social__buttons__btn social__buttons__btn_vk" href="#">Вконтакте</a>
+					<a class="social__buttons__btn social__buttons__btn_fb" href="#">Фейсбук</a>
+					<a class="social__buttons__btn social__buttons__btn_inst" href="#">Инстаграм</a>
+				</div>
+				<div class="social__be-friend">
+					<h2>Давай дружить, это выгодно!</h2>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</section>
+
 		</div>
 	</footer>
 </body>
