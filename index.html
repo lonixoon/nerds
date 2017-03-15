@@ -46,7 +46,7 @@
 							Математически выверенный дизайн
 							<br>для вашего сайта или мобильного приложения.
 						</p>
-						<a class="btn" href="#">Узнать больше</a>
+						<a class="btn btn_long" href="#">Узнать больше</a>
 					</div>
 					<img class="slide__img" src="img/slide1.png" alt="Первый слайд" width="338" height="231">
 				</div>
@@ -60,7 +60,7 @@
 							Нашим дизайнерам мы удаляем нейроны, ответственные
 							<br>за креатив, чтобы дать им возможность все просчитать.
 						</p>
-						<a class="btn btn-info" href="#">Узнать больше</a>
+						<a class="btn btn_long" href="#">Узнать больше</a>
 					</div>
 					<img class="slide__img" src="img/slide2.png" alt="Второй слайд" width="230" height="249">
 				</div>
@@ -73,7 +73,7 @@
 						<p class="slide__left__body">
 							Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.
 						</p>
-						<a class="btn btn-info" href="#">Узнать больше</a>
+						<a class="btn btn_long" href="#">Узнать больше</a>
 					</div>
 					<img class="slide__img" src="img/slide3.png" alt="Третий слайд" width="333" height="319">
 				</div>
@@ -99,7 +99,7 @@
 					<p class="product__item__body">
 						Покорите топ-10 приложений в AppStore и Google Play
 					</p>
-					<a class="btn btn-red" href="#">Заказать</a>
+					<a class="btn  btn_green" href="#">Заказать</a>
 				</div>
 
 				<div class="product__item">
@@ -108,19 +108,19 @@
 					<p class="product__item__body">
 						Вы даже не представляете, насколько вы изумительны!
 					</p>
-					<a class="btn btn-order" href="#">Заказать</a>
+					<a class="btn btn_yelloy" href="#">Заказать</a>
 				</div>
 			</section>
 
 			<section class="about-us flex gray-line">
 				<div class="about-us__offer">
-					<h2>Мы – маленькая, но гордая 
+					<h2 class="about-us__offer__title">Мы – маленькая, но гордая 
 					<br>дизайн-студия из Краснодара.</h2>
-					<p>
+					<p class="about-us__offer__body">
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
 					</p>
-					<span class="about-us__offer__title">Выполняем заказы на разработку:</span>
-					<ul>
+					<span class="about-us__offer__list-title">Выполняем заказы на разработку:</span>
+					<ul class="non-standart-list">
 						<li>Веб-сайты любой сложности</li>
 						<li>Мобильные приложения для IOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -128,9 +128,11 @@
 				</div>
 			  <div class="about-us__how-work">
 					<img class="bout-us__how-work__logo" src="img/logo.png" alt="Nerds" width="187" height="75">
-					<span class="about-us__how-work__since">Since 2004</span>
+					<div class="line-for-title">
+						<span class="about-us__how-work__since">Since 2004</span>
+					</div>
 					<span class="about-us__how-work__title">Как мы работаем:</span>
-					<ul>
+					<ul class="non-standart-list">
 						<li>С самоотдачей 146%</li>
 						<li>Соблюдая сроки на 100%</li>
 						<li>По предоплате 50%</li>
@@ -180,8 +182,21 @@
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</section>
-
 		</div>
 	</footer>
+	<section class="modal-feedback-form">
+		<form action="#" method="post">
+			<label class="modal-feedback-form__name" for="name">Ваше имя:</label>
+			<input type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+
+			<label  class="modal-feedback-form__email" for="email">Ваш e-mail:</label>
+			<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+
+			<label class="modal-feedback-form__comment" for="coment">Текст письма:</label>
+			<textarea id="coment" name="coment" placeholder="В свободной форме"></textarea>
+
+			<button class="btn" type="submit">Отправить</button>
+		</form>
+	</section>
 </body>
 </html>

@@ -13,14 +13,45 @@
   background: #FB565A;
 }
 
-.btn:hover {
-  background-color: #D6494D;  
+  .btn:hover {
+    background-color: #D6494D;  
+  }
+
+  .btn:active {
+    background-color: #B63538;
+    box-shadow: inset 0 2px 0 #9B2D30;
+  }
+
+.btn_green {
+  background-color: #00ca74;
 }
 
-.btn:active {
-  background-color: #B63538;
-  box-shadow: inset 0 2px 0 #9B2D30;
+  .btn_green:hover {
+  background-color: #01a25e;
+  }
+
+  .btn_green:active {
+  background-color: #009053;
+  box-shadow: inset 0 2px 0 #007b47;
+  }
+
+.btn_yelloy {
+  background-color: #efc84a;
 }
+
+  .btn_yelloy:hover {
+  background-color: #d6ae2c;
+  }
+  
+  .btn_yelloy:active {
+  background-color: #c09b24;
+  box-shadow: inset 0 2px 0 #a3841f;
+  }
+
+.btn_long {
+  padding: 10px 70px;
+}
+
 /*Конец Красная прямоугольная кнопка*/
 
 /*Начало Линия серая, разделитель блоков*/
@@ -28,6 +59,31 @@
   border-bottom: 2px solid #eeeeee;
 }
 /*Конец Линия серая, разделитель блоков*/
+
+/*Начало Список, красная линия впереди*/
+.non-standart-list {
+  list-style: none;
+  padding: 0;
+}
+
+  .non-standart-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 24px;
+  }
+
+  .non-standart-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 25px;
+    height: 2px;
+    background: #fb565a;
+  }
+/*Конец Список, красная линия впереди*/
+
+
 /*Конец Общие декоративные элементы для сайта*/
 
 html,
@@ -78,29 +134,57 @@ header {
     display: flex;
     margin-top: 25px;
     list-style: none;
+    font-size: 14px;
+    line-height: 30px;
   }
 
-    .main-menu__list li {
-      margin-right: 40px;
-      font-size: 14px;
-      line-height: 30px;
-    }
-
     .main-menu__list li:last-child {
-      margin-right: 0;
-      margin-left: 50px;
+      margin-left: 40px;
     }
-
-  /*  .main-menu__list_card {
-      margin-right: 0px
-      margin-left: 60px;
-    }*/
 
     .main-menu__list a {
+      padding: 10px 15px;
+      margin: 0 5px;
       text-transform: uppercase;
       text-decoration: none;
       color: #000000;
     }
+
+    .main-menu__list a:hover {
+      color: #fb565a;
+    }
+
+    .main-menu__list a:active {
+      color: #8f8f8f;
+    }
+
+    .main-menu__list .main-menu__list_card {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+      .main-menu__list_card {
+        position: relative;
+      }
+
+      .main-menu__list_card::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 25%;
+        width: 15px;
+        height: 15px;
+        background: url(../img/basket.png) no-repeat 0 0;
+      }
+
+        .main-menu__list_card:hover::before {
+          background-position: 0 100%;
+        }
+
+        .main-menu__list_card:active::before {
+          opacity: 0.4;
+          background-position: 0 0;
+        }
 
 .slider {
   position: relative;
@@ -180,24 +264,31 @@ header {
   margin-top: 40px;
 }
 
-.about-us ul {
-  list-style: none;
-  /*padding: 0;*/
-}
-
   .about-us__offer {
     width: 630px;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 
     .about-us__offer__title {
+      margin-top: 25px;
+      margin-bottom: 9px;
+    }
+
+    .about-us__offer__body {
+      margin-bottom: 45px;
+    }
+
+    .about-us__offer__list-title {
+      display: flex;
       text-transform: uppercase;
+      margin-bottom: 20px;
     }
 
   .about-us__how-work {
     display: flex;
     flex-direction: column;
     width: 240px;
+    margin-top: 25px;
   }
 
     .bout-us__how-work__logo {
@@ -205,10 +296,32 @@ header {
     }
 
     .about-us__how-work__since {
-      align-self: center;
+      position: relative;
+      display: inline-flex;
+      padding: 0 15px;
+      text-transform: uppercase;
+      background-color: #ffffff;
+      z-index: 50;
+    }/*Начало Линии по краям заголовка*/
+    .line-for-title {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-top: 32px;
     }
+    .line-for-title::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      border-bottom: 2px solid #eeeeee;
+      width: 100%;
+      z-index: 10;
+      }/*Конец Линии по краям заголовка*/
 
     .about-us__how-work__title {
+      margin-top: 68px;
+      margin-bottom: 5px;
       text-transform: uppercase;
     }
 
@@ -244,9 +357,6 @@ header {
   .map__address {
     width: 250px;
     padding: 25px;
-   /* padding-left: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;*/
     background: #ffffff;
   }
 
