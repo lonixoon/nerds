@@ -442,7 +442,7 @@ header {
       color: #666666;
     }
 
-    .map__address__btn {
+    .map__address__feedback {
       display: flex;
       justify-content: center;
     }
@@ -487,6 +487,7 @@ header {
 
 /*Начало Попап окна*/
 .modal-feedback {
+  display: none;
   position: fixed;
   left: 50%;
   top: 100px;
@@ -538,7 +539,8 @@ header {
   }
 
 .overlay {
-  position: fixed;
+  display: none;
+  position: fixed;  
   top: 0;
   left: 0;
   width: 100%;
