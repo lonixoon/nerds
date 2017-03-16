@@ -184,19 +184,24 @@
 			</section>
 		</div>
 	</footer>
-	<section class="modal-feedback-form">
-		<form action="#" method="post">
-			<label class="modal-feedback-form__name" for="name">Ваше имя:</label>
-			<input type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
-
-			<label  class="modal-feedback-form__email" for="email">Ваш e-mail:</label>
-			<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-
-			<label class="modal-feedback-form__comment" for="coment">Текст письма:</label>
-			<textarea id="coment" name="coment" placeholder="В свободной форме"></textarea>
-
-			<button class="btn" type="submit">Отправить</button>
+	<section class="modal-feedback">
+		<div class="close">Закрыть</div>
+		<form class="modal-feedback__form" action="#" method="post">
+			<div class="modal-feedback-form__name">
+				<label for="name">Ваше имя:</label>
+				<input class="text" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+			</div>
+			<div class="modal-feedback-form__email">
+				<label for="email">Ваш e-mail:</label>
+				<input class="text" type="email" name="email" id="email" placeholder="Для отправки ответа">
+			</div>
+			<div class="modal-feedback-form__comment">
+				<label for="coment">Текст письма:</label>
+				<textarea class="text" id="coment" name="coment" placeholder="В свободной форме" rows="4"></textarea>
+			</div>
+			<button class="btn modal-feedback__btn" type="submit">Отправить</button>
 		</form>
 	</section>
+	<div class="overlay"></div>
 </body>
 </html>
