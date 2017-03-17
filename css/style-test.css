@@ -14,6 +14,7 @@
   text-transform: uppercase;
   color: #ffffff;
   background: #FB565A;
+  cursor: pointer;
 }
 
   .btn:hover {
@@ -124,6 +125,7 @@
   border-radius: 50px;
   background: #fb565a;
   font-size: 0;
+  cursor: pointer;
 }
 
 .close:hover {
@@ -552,4 +554,4 @@ header {
 .modal-show {
   display: flex;
 }
-/*Конец Попап окна
+/*Конец Попап окна*/

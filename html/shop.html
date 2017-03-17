@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/style-test.css">
+<title>Nerds Студия Дизаина</title>
+</head>
+<body>
+  <header>
+    <div  class="container">
+      <div class="flex">
+        <div class="logo">
+          <img src="../img/logo.png" alt="Nerds" width="139" height="56">
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list flex">
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="main-menu__list_card" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>        
+      </div>
+      <h1>Добро пожаловать в магазин
+      <br>готовых макетов</h1>
+    </div>
+  </header>
+  <main>
+    <div  class="container">
+      <div class="flex">
+        <form class="shop__find-form">
+          <div class="shop__find-form__range">
+            <span class="shop__find-form__block-title">Стоимость:</span>
+            <div class="shop__find-form__range__runner">
+              <span class="shop__find-form__range__runner__circle_left"></span>
+              <span class="shop__find-form__range__runner__circle_right"></span>
+              <span class="shop__find-form__range__runner__green-line"></span>
+              <span class="shop__find-form__range__runner__grey-line"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+  <section class="map">
+      <div class="map__address">
+        <span class="map__address__title">Nerds desing studio</span>
+        <p class="map__address__body">
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д 19.8<br>
+          тел. +7 (812) 275-75-75
+        </p>
+        <a class="btn map__address__feedback" href="#">Напишите нам</a>
+      </div>
+    </section>
+    <div class="container">
+      <section class="social flex">
+        <div class="social__buttons">
+          <a class="social__buttons__btn social__buttons__btn_vk" href="#">Вконтакте</a>
+          <a class="social__buttons__btn social__buttons__btn_fb" href="#">Фейсбук</a>
+          <a class="social__buttons__btn social__buttons__btn_inst" href="#">Инстаграм</a>
+        </div>
+        <div class="social__be-friend">
+          <h2>Давай дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <section class="modal-feedback">
+    <div class="close">Закрыть</div>
+    <form class="modal-feedback__form" action="#" method="post">
+      <div class="modal-feedback-form__name">
+        <label for="name">Ваше имя:</label>
+        <input class="text" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+      </div>
+      <div class="modal-feedback-form__email">
+        <label for="email">Ваш e-mail:</label>
+        <input class="text" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </div>
+      <div class="modal-feedback-form__comment">
+        <label for="coment">Текст письма:</label>
+        <textarea class="text" id="coment" name="coment" placeholder="В свободной форме" rows="4"></textarea>
+      </div>
+      <button class="btn modal-feedback__btn" type="submit">Отправить</button>
+    </form>
+  </section>
+  <div class="overlay"></div>
+  <script src="../js/popup.js"></script>
+</body>
+</html>
