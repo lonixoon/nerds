@@ -548,4 +548,8 @@ header {
   z-index: 90;
   background: rgba(0, 0, 0, 0.3);
 }
+
+.modal-show {
+  display: flex;
+}
 /*Конец Попап окна
