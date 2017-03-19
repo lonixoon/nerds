@@ -34,24 +34,68 @@
           </ul>
         </nav>        
       </div>
-      <h1>Добро пожаловать в магазин
+      <h1 class="inner-page__h1">Добро пожаловать в магазин
       <br>готовых макетов</h1>
     </div>
   </header>
-  <main>
+  <main class="inner-page">
     <div  class="container">
       <div class="flex">
-        <form class="shop__find-form">
-          <div class="shop__find-form__range">
-            <span class="shop__find-form__block-title">Стоимость:</span>
-            <div class="shop__find-form__range__runner">
-              <span class="shop__find-form__range__runner__circle_left"></span>
-              <span class="shop__find-form__range__runner__circle_right"></span>
-              <span class="shop__find-form__range__runner__green-line"></span>
-              <span class="shop__find-form__range__runner__grey-line"></span>
+        <form class="inner-page__find-form">
+          <div class="inner-page__find-form__price">
+            <span class="inner-page__find-form__block-title">Стоимость:</span>
+            <div class="range-runner">
+              <span class="range-runner__circle_start"></span>
+              <span class="range-runner__circle_end"></span>
+              <span class="range-runner__line_green"></span>
+              <span class="range-runner__line_grey"></span>
             </div>
+            <label>от <input type="number" name="price-start" value="0"></label>
+            <label>до <input type="number" name="price-end" value="15000"></label>
           </div>
+          <div class="inner-page__find-form__type grid">
+            <span class="inner-page__find-form__block-title">Сетка:</span>
+            <label><input type="radio" name="grig" value="adeptive" checked>Адаптивная</label>
+            <label><input type="radio" name="grig" value="fixed">Фиксированная</label>
+            <label><input type="radio" name="grig" value="flex">Резиновая</label>
+          </div>
+          <div class="inner-page__find-form__type features">
+            <span class="inner-page__find-form__block-title">Особенности:</span>
+            <label><input type="checkbox" name="slider" checked>Слайдер</label>
+            <label><input type="checkbox" name="features">Блок преимуществ</label>
+            <label><input type="checkbox" name="news" checked>Новости</label>
+            <label><input type="checkbox" name="gallery">Галерея</label>
+            <label><input type="checkbox" name="card">Корзина</label>
+          </div>
+          <button type="submit">Показать</button>
         </form>
+        <div class="inner-page__right-content">
+          <div class="inner-page__sorting">
+            <span class="inner-page__sorting__title">Сортировать:</span>
+            <span class="inner-page__sorting__type">по цене</span>
+            <span class="inner-page__sorting__type">по типу</span>
+            <span class="inner-page__sorting__type">по функционалу</span>
+            <span class="inner-page__sorting__control">
+              <span class="inner-page__sorting__control_from-big">от меньшего</span>
+              <span class="inner-page__sorting__control_from-small">от большего</span>
+            </span>
+          </div>
+          <section class="inner-page__production">
+            <div class="inner-page__production__item">
+              <div class="inner-page__production__item__header">
+                <span class="inner-page__production__item__header__circle"></span>
+              </div>
+              <img src="../img/shop_aviator.jpg" alt="Aviator" width="240" height="240">
+            </div>
+          </section>
+          <div class="inner-page__pages">
+            <span>Предыдущая</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>Следующая</span>
+          </div>
+        </div>
       </div>
     </div>
   </main>
