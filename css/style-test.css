@@ -1,20 +1,36 @@
 /*Начало Общие декоративные элементы для сайта*/
+/*Начало Блок с бегенком range*/
+.range-runner {
+  width: 240px;
+  height: 80px;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+/*Конец Блок с бегенком range*/
+
+
 /*Начало Красная прямоугольная кнопка*/
 .btn {
   display: inline-flex;
   justify-content: center;
   padding: 10px 40px;
   margin: 0;
+
   border: 1px solid transparent;
+  outline: none;
   border-radius: 3px;
+
   font-size: 12px;
   line-height: 1.3;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+
   color: #ffffff;
   background: #FB565A;
+
   cursor: pointer;
+
 }
 
   .btn:hover {
@@ -52,9 +68,33 @@
   box-shadow: inset 0 2px 0 #a3841f;
   }
 
+.btn_grey {
+  color: #000000;
+  background: #f1f1f1;
+}
+  .btn_grey:hover {
+    background: #e5e5e5;
+  }
+
+  .btn_grey:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 2px 0 #b5b5b5;
+  }
+
+
 .btn_long {
   padding: 10px 70px;
 }
+
+.btn_number {
+  padding: 10px 15px;
+}
+
+.btn_price {
+  font-size: 18px;
+  padding: 6px 40px;
+}
+  
 /*Конец Красная прямоугольная кнопка*/
 
 
@@ -255,14 +295,14 @@ header {
         background: url(../img/basket.png) no-repeat 0 0;
       }
 
-        .main-menu__list_card:hover::before {
-          background-position: 0 100%;
-        }
+      .main-menu__list_card:hover::before {
+        background-position: 0 100%;
+      }
 
-        .main-menu__list_card:active::before {
-          opacity: 0.4;
-          background-position: 0 0;
-        }
+      .main-menu__list_card:active::before {
+        opacity: 0.4;
+        background-position: 0 0;
+      }
 
 .slider {
   position: relative;
@@ -440,56 +480,147 @@ header {
 .inner-page__find-form {
   width: 240px;
 }
+  
+  .inner-page__find-form__block-title {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 
 .inner-page__right-content {
   width: 560px;
 }
 
-.inner-page__sorting {
-    margin-bottom: 20px;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-.inner-page__sorting__title {
-  margin-right: 40px;
-}
-
-.inner-page__sorting__type {
-  margin-right: 40px;
-  border-bottom: 1px dotted #00ca74;
-  color: #b2b2b2;
-}
-
-.inner-page__sorting__control {
-  position: relative;
-  float: right;
-  width: 30px;
-  height: 10px;
-}
-
-  .inner-page__sorting__control_from-big {
-    position: absolute;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    border-top: 10px solid #00ca74;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
+  .inner-page__sorting {
+      margin-bottom: 20px;
+      font-size: 12px;
+      text-transform: uppercase;
   }
 
-  .inner-page__sorting__control_from-small {
-    position: absolute;
-    left: 18px;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid #00ca74;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
+  .inner-page__sorting__title {
+    margin-right: 40px;
   }
 
+  .inner-page__sorting__type {
+    margin-right: 40px;
+    border-bottom: 1px dotted #00ca74;
+    color: #b2b2b2;
+  }
 
+  .inner-page__sorting__control {
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 10px;
+  }
+
+    .inner-page__sorting__control_from-big,
+    .inner-page__sorting__control_from-small {
+      position: absolute;
+      font-size: 0;
+      width: 0;
+      height: 0;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      cursor: pointer;
+    }
+
+      .inner-page__sorting__control_from-big {
+        border-top: 10px solid #00ca74;
+      }
+
+      .inner-page__sorting__control_from-small {
+        left: 18px;
+        border-bottom: 10px solid #00ca74;
+      }
+
+  .inner-page__production {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+    .inner-page__production__item {
+      position: relative;
+      width: 240px;
+      height: 270px;
+      margin-bottom: 80px;
+    }
+
+      .inner-page__production__item__img {
+        position: absolute;
+        top: 30px;
+        z-index: 10;
+      }
+
+      .inner-page__production__item__header {
+        display: flex;
+        align-items: center;
+        width: 240px;
+        height: 30px;
+        padding-left: 25px;
+        background: #F1F1F1;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .inner-page__production__item:hover .inner-page__production__item__header {
+        background: #797979;
+      }
+
+        .inner-page__production__item__header__circle {
+          position: relative;
+          display: inline-flex;
+          width: 10px;
+          height: 10px;
+          margin-right: 5px;
+          border-radius: 50%;
+          background: #ffffff;
+        }
+
+          .inner-page__production__item__header__circle::before,
+          .inner-page__production__item__header__circle::after {
+            content: "";
+            position: absolute;        
+            display: inline-flex;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            border-radius: 50%;
+            background: #ffffff;
+            }
+          .inner-page__production__item__header__circle::before {
+            left: 15px;
+          }
+          .inner-page__production__item__header__circle::after {
+            right: 10px;
+          }
+
+      .inner-page__production__item__body {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px; 
+        text-align: center;
+        background: #ffffff;
+        font-size: 14px;
+        z-index: 5;
+      }
+
+        .inner-page__production__item__body__title {
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+
+
+
+      .inner-page__production__item:hover .inner-page__production__item__body {
+        z-index: 15;
+      }
+
+  .inner-page__pages {
+    margin-bottom: 80px;
+  }
 /*Начало Подвал*/
 .map {
   display: flex;
