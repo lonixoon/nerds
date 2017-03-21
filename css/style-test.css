@@ -1,15 +1,57 @@
 /*Начало Общие декоративные элементы для сайта*/
-/*Начало Блок с бегенком range*/
-.range-runner {
-  width: 240px;
-  height: 80px;
-  border-radius: 4px;
-  background: #f1f1f1;
+/*Начало Радиобатон*/
+.radio input[type="radio"] {
+  display: none;
 }
-/*Конец Блок с бегенком range*/
+.radio label {
+  position: relative;
+  padding-left: 35px;
+}
+.radio label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px #c1c1c1;
+  background: #ffffff;
+}
+
+.radio input[type="radio"]:checked + label::before {
+  box-shadow: 
+    inset 0 0 0 3px #c1c1c1,
+    inset 0 0 0 8px #ffffff;
+  background: #c1c1c1;
+ }
+/*Конец Радиобатон*/
+
+/*Начало Чекбокс*/
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+.checkbox label {
+  position: relative;
+  padding-left: 35px;
+}
+.checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+  background: url(../img/icon-checkbox.png) no-repeat 0 100%;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: url(../img/icon-checkbox.png) no-repeat 0 0;
+}
+/*Конец Чекбокс*/
 
 
-/*Начало Красная прямоугольная кнопка*/
+/*Начало кнопка*/
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -28,58 +70,49 @@
 
   color: #ffffff;
   background: #FB565A;
-
   cursor: pointer;
-
 }
-
-  .btn:hover {
-    background-color: #D6494D;  
-  }
-
-  .btn:active {
-    background-color: #B63538;
-    box-shadow: inset 0 2px 0 #9B2D30;
-  }
+.btn:hover {
+  background-color: #D6494D;  
+}
+.btn:active {
+  background-color: #B63538;
+  box-shadow: inset 0 2px 0 #9B2D30;
+}
 
 .btn_green {
   background-color: #00ca74;
 }
-
-  .btn_green:hover {
-  background-color: #01a25e;
-  }
-
-  .btn_green:active {
-  background-color: #009053;
-  box-shadow: inset 0 2px 0 #007b47;
-  }
+.btn_green:hover {
+background-color: #01a25e;
+}
+.btn_green:active {
+background-color: #009053;
+box-shadow: inset 0 2px 0 #007b47;
+}
 
 .btn_yelloy {
   background-color: #efc84a;
 }
-
-  .btn_yelloy:hover {
-  background-color: #d6ae2c;
-  }
-  
-  .btn_yelloy:active {
-  background-color: #c09b24;
-  box-shadow: inset 0 2px 0 #a3841f;
-  }
+.btn_yelloy:hover {
+background-color: #d6ae2c;
+}
+.btn_yelloy:active {
+background-color: #c09b24;
+box-shadow: inset 0 2px 0 #a3841f;
+}
 
 .btn_grey {
   color: #000000;
   background: #f1f1f1;
 }
-  .btn_grey:hover {
-    background: #e5e5e5;
-  }
-
-  .btn_grey:active {
-  background-color: #d5d5d5;
-  box-shadow: inset 0 2px 0 #b5b5b5;
-  }
+.btn_grey:hover {
+  background: #e5e5e5;
+}
+.btn_grey:active {
+background-color: #d5d5d5;
+box-shadow: inset 0 2px 0 #b5b5b5;
+}
 
 
 .btn_long {
@@ -93,9 +126,8 @@
 .btn_price {
   font-size: 18px;
   padding: 6px 40px;
-}
-  
-/*Конец Красная прямоугольная кнопка*/
+}  
+/*Конец кнопка*/
 
 
 /*Начало Линия серая, разделитель блоков*/
@@ -482,10 +514,106 @@ header {
 }
   
   .inner-page__find-form__block-title {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.3;
     text-transform: uppercase;
   }
+
+  .inner-page__find-form__price__range-runner {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    width: 240px;
+    height: 80px;
+    border-radius: 4px;
+    background: #f1f1f1;
+  }
+
+    .inner-page__find-form__price__range-runner__circle_start,
+    .inner-page__find-form__price__range-runner__circle_end {
+      position: absolute;
+      display: inline-flex;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      box-shadow: 
+        0 2px 0 0 #d0d0d0,
+        inset 0 0 0 8px #ffffff;
+      background: #ababab;
+      cursor: pointer;
+      z-index: 30;
+    }
+
+    .inner-page__find-form__price__range-runner__circle_start {
+      left: 20px;
+    }
+
+    .inner-page__find-form__price__range-runner__circle_end {
+      right: 70px;
+    }
+
+    .inner-page__find-form__price__range-runner__line_green,
+    .inner-page__find-form__price__range-runner__line_grey {
+      display: inline-flex;
+      position: absolute;
+      left: 30px;
+      height: 2px;
+      
+    }
+
+    .inner-page__find-form__price__range-runner__line_green {
+      width: 130px;
+      background: #00ca74;
+      z-index: 20;
+    }
+
+    .inner-page__find-form__price__range-runner__line_grey {
+      width: 180px;
+      background: #d7dcde;
+      z-index: 10;
+    }
+  .inner-page__find-form__price__min-max {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .inner-page__find-form__price__min-max input {
+    display: inline-flex;
+    justify-content: center;
+    padding: 7px 0;
+    width: 80px;
+    margin-left: 8px;
+
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+
+    background: #F1F1F1;
+    }
+
+    .inner-page__find-form__type {
+      display: inline-flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    .inner-page__find-form__type:last-of-type {
+      margin-bottom: 40px;
+    }
+
+    .inner-page__find-form__type label {
+      margin-bottom: 18px;
+    }
+    .inner-page__find-form__type label:last-child {
+      margin-bottom: 0;
+    }
+
 
 .inner-page__right-content {
   width: 560px;

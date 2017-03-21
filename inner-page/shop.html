@@ -46,28 +46,47 @@
         <form class="inner-page__find-form">
           <div class="inner-page__find-form__price">
             <span class="inner-page__find-form__block-title">Стоимость:</span>
-            <div class="range-runner">
-              <span class="range-runner__circle_start"></span>
-              <span class="range-runner__circle_end"></span>
-              <span class="range-runner__line_green"></span>
-              <span class="range-runner__line_grey"></span>
+            <div class="inner-page__find-form__price__range-runner">
+              <span class="inner-page__find-form__price__range-runner__circle_start"></span>
+              <span class="inner-page__find-form__price__range-runner__circle_end"></span>
+              <span class="inner-page__find-form__price__range-runner__line_green"></span>
+              <span class="inner-page__find-form__price__range-runner__line_grey"></span>
             </div>
-            <label>от <input type="number" name="price-start" value="0"></label>
-            <label>до <input type="number" name="price-end" value="15000"></label>
+            <div class="inner-page__find-form__price__min-max flex">
+              <label>от<input type="number" name="min" value="0" step="1000"></label>
+              <label>до<input type="number" name="max" value="15000" step="1000"></label>
+            </div>
           </div>
-          <div class="inner-page__find-form__type grid">
+          
+          <div class="inner-page__find-form__type radio">
             <span class="inner-page__find-form__block-title">Сетка:</span>
-            <label><input type="radio" name="grig" value="adeptive" checked>Адаптивная</label>
-            <label><input type="radio" name="grig" value="fixed">Фиксированная</label>
-            <label><input type="radio" name="grig" value="flex">Резиновая</label>
+
+            <input type="radio" name="grig" value="adeptive" id="adeptive" checked>
+            <label for="adeptive">Адаптивная</label>
+
+            <input type="radio" name="grig" value="fixed" id="fixed">
+            <label for="fixed">Фиксированная</label>
+
+            <input type="radio" name="grig" value="flex" id="flex">
+            <label for="flex">Резиновая</label>
           </div>
-          <div class="inner-page__find-form__type features">
+          <div class="inner-page__find-form__type checkbox">
             <span class="inner-page__find-form__block-title">Особенности:</span>
-            <label><input type="checkbox" name="slider" checked>Слайдер</label>
-            <label><input type="checkbox" name="features">Блок преимуществ</label>
-            <label><input type="checkbox" name="news" checked>Новости</label>
-            <label><input type="checkbox" name="gallery">Галерея</label>
-            <label><input type="checkbox" name="card">Корзина</label>
+
+            <input type="checkbox" name="slider" id="slider" checked>
+            <label for="slider">Слайдер</label>
+
+            <input type="checkbox" name="features" id="features">
+            <label for="features">Блок преимуществ</label>
+
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
+
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+
+            <input type="checkbox" name="card" id="card">
+            <label for="card">Корзина</label>
           </div>
           <button type="submit" class="btn btn_grey">Показать</button>
         </form>
