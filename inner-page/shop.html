@@ -12,23 +12,23 @@
     <div  class="container">
       <div class="flex">
         <div class="logo">
-          <a href="#">
+          <a href="../index.html">
             <img src="../img/logo.png" alt="Nerds" width="139" height="56">
           </a>
         </div>
         <nav class="main-menu">
           <ul class="main-menu__list flex">
             <li>
-              <a href="#">Студия</a>
+              <a href="../index.html#studio">Студия</a>
             </li>
             <li>
-              <a href="#">Клиенты</a>
+              <a href="../index.html#clients">Клиенты</a>
+            </li>
+            <li class="main-menu__list_active">
+              <span>Магазин</span>
             </li>
             <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
+              <a href="#contacts">Контакты</a>
             </li>
             <li>
               <a class="main-menu__list_card" href="#">Корзина</a>
@@ -36,30 +36,30 @@
           </ul>
         </nav>        
       </div>
-      <h1 class="inner-page__h1">Добро пожаловать в магазин
+      <h1 class="h1">Добро пожаловать в магазин
       <br>готовых макетов</h1>
     </div>
   </header>
   <main class="inner-page">
     <div  class="container">
       <div class="flex">
-        <form class="inner-page__find-form">
-          <div class="inner-page__find-form__price">
-            <span class="inner-page__find-form__block-title">Стоимость:</span>
-            <div class="inner-page__find-form__price__range-runner">
-              <span class="inner-page__find-form__price__range-runner__circle_start"></span>
-              <span class="inner-page__find-form__price__range-runner__circle_end"></span>
-              <span class="inner-page__find-form__price__range-runner__line_green"></span>
-              <span class="inner-page__find-form__price__range-runner__line_grey"></span>
+        <form class="find-form">
+          <div class="find-form__price">
+            <span class="find-form__block-title">Стоимость:</span>
+            <div class="find-form__price__range-runner">
+              <span class="find-form__price__range-runner__circle_start"></span>
+              <span class="find-form__price__range-runner__circle_end"></span>
+              <span class="find-form__price__range-runner__line_green"></span>
+              <span class="find-form__price__range-runner__line_grey"></span>
             </div>
-            <div class="inner-page__find-form__price__min-max flex">
+            <div class="find-form__price__min-max flex">
               <label>от<input type="number" name="min" value="0" step="1000"></label>
               <label>до<input type="number" name="max" value="15000" step="1000"></label>
             </div>
           </div>
           
-          <div class="inner-page__find-form__type radio">
-            <span class="inner-page__find-form__block-title">Сетка:</span>
+          <div class="find-form__type radio">
+            <span class="find-form__block-title">Сетка:</span>
 
             <input type="radio" name="grig" value="adeptive" id="adeptive" checked>
             <label for="adeptive">Адаптивная</label>
@@ -70,8 +70,8 @@
             <input type="radio" name="grig" value="flex" id="flex">
             <label for="flex">Резиновая</label>
           </div>
-          <div class="inner-page__find-form__type checkbox">
-            <span class="inner-page__find-form__block-title">Особенности:</span>
+          <div class="find-form__type checkbox">
+            <span class="find-form__block-title">Особенности:</span>
 
             <input type="checkbox" name="slider" id="slider" checked>
             <label for="slider">Слайдер</label>
@@ -90,98 +90,98 @@
           </div>
           <button type="submit" class="btn btn_grey">Показать</button>
         </form>
-        <div class="inner-page__right-content">
-          <div class="inner-page__sorting">
-            <span class="inner-page__sorting__title">Сортировать:</span>
-            <span class="inner-page__sorting__type">по цене</span>
-            <span class="inner-page__sorting__type">по типу</span>
-            <span class="inner-page__sorting__type">по функционалу</span>
-            <span class="inner-page__sorting__control">
-              <span class="inner-page__sorting__control_from-big">от меньшего</span>
-              <span class="inner-page__sorting__control_from-small">от большего</span>
+        <div class="right-content">
+          <div class="sorting">
+            <span class="sorting__title">Сортировать:</span>
+            <a href="#" class="sorting__type">по цене</a>
+            <a href="#" class="sorting__type sorting__title_active">по типу</a>
+            <a href="#" class="sorting__type">по функционалу</a>
+            <span class="sorting__control">
+              <a href="#" class="sorting__control__from-big">от </a>
+              <a href="#" class="sorting__control__from-small sorting__control__from-small_active">от большего</a>
             </span>
           </div>
-          <section class="inner-page__production flex">
-            <div class="inner-page__production__item">
-              <img class="inner-page__production__item__img" src="../img/shop_aviator.jpg" width="240" height="240">
-              <div class="inner-page__production__item__header">
-                <span class="inner-page__production__item__header__circle"></span>
+          <section class="production flex">
+            <div class="production__item">
+              <img class="production__item__img" src="../img/shop_aviator.jpg" width="240" height="240">
+              <div class="production__item__header">
+                <span class="production__item__header__circle"></span>
               </div>
-              <div class="inner-page__production__item__body">
-                <span class="inner-page__production__item__body__title">Aviator</span>
+              <div class="production__item__body">
+                <span class="production__item__body__title">Aviator</span>
                 <p>Одностраничный макет с авторским дизайном</p>
                 <a class="btn btn_price" href="#">8000 р.</a>
               </div>
             </div>
 
-            <div class="inner-page__production__item">
-              <img class="inner-page__production__item__img" src="../img/shop-sunset.jpg" width="240" height="240">
-              <div class="inner-page__production__item__header">
-                <span class="inner-page__production__item__header__circle"></span>
+            <div class="production__item">
+              <img class="production__item__img" src="../img/shop-sunset.jpg" width="240" height="240">
+              <div class="production__item__header">
+                <span class="production__item__header__circle"></span>
               </div>
-              <div class="inner-page__production__item__body">
-                <span class="inner-page__production__item__body__title">Sunset</span>
+              <div class="production__item__body">
+                <span class="production__item__body__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
                 <a class="btn btn_price" href="#">10000 р.</a>
               </div>
             </div>
 
-            <div class="inner-page__production__item">
-              <img class="inner-page__production__item__img" src="../img/shop-forte.jpg" width="240" height="240">
-              <div class="inner-page__production__item__header">
-                <span class="inner-page__production__item__header__circle"></span>
+            <div class="production__item">
+              <img class="production__item__img" src="../img/shop-forte.jpg" width="240" height="240">
+              <div class="production__item__header">
+                <span class="production__item__header__circle"></span>
               </div>
-              <div class="inner-page__production__item__body">
-                <span class="inner-page__production__item__body__title">Sunset</span>
+              <div class="production__item__body">
+                <span class="production__item__body__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">10000 р.</a>
+                <a class="btn btn_price" href="#">12000 р.</a>
               </div>
             </div>
 
-            <div class="inner-page__production__item">
-              <img class="inner-page__production__item__img" src="../img/shop-thai.jpg" width="240" height="240">
-              <div class="inner-page__production__item__header">
-                <span class="inner-page__production__item__header__circle"></span>
+            <div class="production__item">
+              <img class="production__item__img" src="../img/shop-thai.jpg" width="240" height="240">
+              <div class="production__item__header">
+                <span class="production__item__header__circle"></span>
               </div>
-              <div class="inner-page__production__item__body">
-                <span class="inner-page__production__item__body__title">Sunset</span>
+              <div class="production__item__body">
+                <span class="production__item__body__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">10000 р.</a>
+                <a class="btn btn_price" href="#">11000 р.</a>
               </div>
             </div>
 
-            <div class="inner-page__production__item">
-              <img class="inner-page__production__item__img" src="../img/shop-avenue.jpg" width="240" height="240">
-              <div class="inner-page__production__item__header">
-                <span class="inner-page__production__item__header__circle"></span>
+            <div class="production__item">
+              <img class="production__item__img" src="../img/shop-avenue.jpg" width="240" height="240">
+              <div class="production__item__header">
+                <span class="production__item__header__circle"></span>
               </div>
-              <div class="inner-page__production__item__body">
-                <span class="inner-page__production__item__body__title">Sunset</span>
+              <div class="production__item__body">
+                <span class="production__item__body__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">10000 р.</a>
+                <a class="btn btn_price" href="#">6000 р.</a>
               </div>
             </div>
 
-            <div class="inner-page__production__item">
-              <img class="inner-page__production__item__img" src="../img/shop-dovetail.jpg" width="240" height="240">
-              <div class="inner-page__production__item__header">
-                <span class="inner-page__production__item__header__circle"></span>
+            <div class="production__item">
+              <img class="production__item__img" src="../img/shop-dovetail.jpg" width="240" height="240">
+              <div class="production__item__header">
+                <span class="production__item__header__circle"></span>
               </div>
-              <div class="inner-page__production__item__body">
-                <span class="inner-page__production__item__body__title">Sunset</span>
+              <div class="production__item__body">
+                <span class="production__item__body__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">10000 р.</a>
+                <a class="btn btn_price" href="#">7000 р.</a>
               </div>
             </div>
           </section>
-          <div class="inner-page__pages">
-            <a href="#" class="btn btn_grey">Предыдущая</a>
-            <a href="#" class="btn btn_grey btn_number">1</a>
+          <div class="pages-nav">
+            <a href="#" class="btn btn_grey off">Предыдущая</a>
+            <a href="#" class="btn btn_grey btn_number page-nav_active">1</a>
             <a href="#" class="btn btn_grey btn_number">2</a>
             <a href="#" class="btn btn_grey btn_number">3</a>
             <a href="#" class="btn btn_grey">Следующая</a>
@@ -193,6 +193,7 @@
   <footer class="main-footer">
   <section class="map">
       <div class="map__address">
+      <a name="contacts">
         <span class="map__address__title">Nerds desing studio</span>
         <p class="map__address__body">
           191186, Санкт-Петербург,
