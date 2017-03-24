@@ -548,8 +548,6 @@ header {
     .find-form__price__range-runner {
       position: relative;
       display: inline-flex;
-      align-items: center;
-      justify-content: center;
       margin-bottom: 14px;
       width: 240px;
       height: 80px;
@@ -560,6 +558,8 @@ header {
       .find-form__price__range-runner__circle_start,
       .find-form__price__range-runner__circle_end {
         position: absolute;
+        top: 50%;
+        margin-top: -10px;
         display: inline-flex;
         width: 20px;
         height: 20px;
@@ -584,6 +584,8 @@ header {
       .find-form__price__range-runner__line_grey {
         display: inline-flex;
         position: absolute;
+        top: 50%;
+        margin-top: -1px;
         left: 30px;
         height: 2px;
         
