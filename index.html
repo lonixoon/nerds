@@ -5,17 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style-test.css">
+	<link rel="stylesheet" type="text/css" href="css/style-bem.css">
+
 <title>Nerds Студия Дизаина</title>
 </head>
 <body>
-	<header>
+	<header class="page-header">
 		<div  class="container">
-			<div class="flex">
 				<div class="logo">
 					<img src="img/logo.png" alt="Nerds" width="139" height="56">
 				</div>
-				<nav class="main-menu">
-					<ul class="main-menu__list flex">
+				<nav class="main-menu  main-menu--right">
+					<ul class="main-menu__list">
 						<li>
 							<a href="#studio">Студия</a>
 						</li>
@@ -28,12 +29,11 @@
 						<li>
 							<a href="#contacts">Контакты</a>
 						</li>
-						<li>
+						<li class="">
 							<a class="main-menu__list_card" href="#">Корзина</a>
 						</li>
 					</ul>
 				</nav>
-			</div>
 
 			<section class="slider">				
 				<input class="slider__radio1" type="radio" id="slide-1" name="radio-slider" checked>

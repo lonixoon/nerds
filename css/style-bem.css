@@ -1,0 +1,12 @@
+.logo {
+  display: inline-flex;
+}
+
+.main-menu {
+  display: inline-flex;
+}
+
+  .main-menu--right {
+     float: right;
+  }
+  
