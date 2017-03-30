@@ -52,26 +52,7 @@
 
 
 /*Начало Список, красная линия впереди*/
-.non-standart-list {
-  list-style: none;
-  padding: 0;
-}
 
-  .non-standart-list li {
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 24px;
-  }
-
-  .non-standart-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 50%;
-    width: 25px;
-    height: 2px;
-    background: #fb565a;
-  }
 /*Конец Список, красная линия впереди*/
 
 
@@ -153,29 +134,27 @@
 
 
 .about-us {
-  padding-bottom: 60px;
-  margin-top: 40px;
 }
 
-  .about-us__offer {
+  .about-us__left {
     width: 630px;
     padding-right: 20px;
   }
 
-    .about-us__offer__title {
-      margin-top: 25px;
-      margin-bottom: 9px;
-    }
+  .about-us__title {
+    margin-top: 25px;
+    margin-bottom: 9px;
+  }
 
-    .about-us__offer__body {
-      margin-bottom: 45px;
-    }
+  .about-us__body {
+    margin-bottom: 45px;
+  }
 
-    .about-us__offer__list-title {
-      display: flex;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
+  .about-us__list-title {
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 
   .about-us__how-work {
     display: flex;
@@ -184,33 +163,15 @@
     margin-top: 25px;
   }
 
-    .bout-us__how-work__logo {
-      align-self: center;
-    }
-
-    .about-us__how-work__since {
+    .about-us__since {
       position: relative;
       display: inline-flex;
-      padding: 0 15px;
+      
       text-transform: uppercase;
-      background-color: #ffffff;
+      
       z-index: 50;
     }/*Начало Линии по краям заголовка*/
-    .line-for-title {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      margin-top: 32px;
-    }
-    .line-for-title::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      border-bottom: 2px solid #eeeeee;
-      width: 100%;
-      z-index: 10;
-      }/*Конец Линии по краям заголовка*/
+/*Конец Линии по краям заголовка*/
 
     .about-us__how-work__title {
       margin-top: 68px;

@@ -12,8 +12,27 @@ body {
  }
 
 .about-us {
-  display: flex;
 }
+  .about-us__list--red-line {
+    list-style: none;
+    padding: 0;
+  }
+
+  .about-us__list--red-line li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 24px;
+  }
+
+  .about-us__list--red-line li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 25px;
+    height: 2px;
+    background: #fb565a;
+  }
 
 
 .btn {
@@ -115,6 +134,34 @@ body {
 .logo {
   display: inline-flex;
 }
+
+  .logo--center {
+    align-self: center;
+  }
+
+
+.lines-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+  .lines-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-bottom: 2px solid #eeeeee;
+    width: 100%;
+    z-index: 10;
+    }
+
+  .lines-title__text {
+    background-color: #ffffff;
+    z-index: 20;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 
 .main-menu {
@@ -234,10 +281,14 @@ body {
     align-self: center;
   }
 
+
 .we-make {
-  width: 240px;
-  font-size: 15px;
 }
+
+  .we-make__item {
+    width: 240px;
+    font-size: 15px;
+  }
 
 
 
