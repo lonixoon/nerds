@@ -11,6 +11,11 @@ body {
     box-sizing: border-box;
  }
 
+.about-us {
+  display: flex;
+}
+
+
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -40,59 +45,61 @@ body {
   box-shadow: inset 0 2px 0 #9B2D30;
 }
 
-.btn--green {
-  background-color: #00ca74;
-}
-.btn--green:hover {
-background-color: #01a25e;
-}
-.btn--green:active {
-background-color: #009053;
-box-shadow: inset 0 2px 0 #007b47;
-}
+  .btn--green {
+    background-color: #00ca74;
+  }
+  .btn--green:hover {
+  background-color: #01a25e;
+  }
+  .btn--green:active {
+  background-color: #009053;
+  box-shadow: inset 0 2px 0 #007b47;
+  }
 
-.btn--yelloy {
-  background-color: #efc84a;
-}
-.btn--yelloy:hover {
-background-color: #d6ae2c;
-}
-.btn--yelloy:active {
-background-color: #c09b24;
-box-shadow: inset 0 2px 0 #a3841f;
-}
+  .btn--yelloy {
+    background-color: #efc84a;
+  }
+  .btn--yelloy:hover {
+  background-color: #d6ae2c;
+  }
+  .btn--yelloy:active {
+  background-color: #c09b24;
+  box-shadow: inset 0 2px 0 #a3841f;
+  }
 
-.btn--grey {
-  color: #000000;
-  background: #f1f1f1;
-  font-weight: 500;
-}
-.btn--grey:hover {
-  background: #e5e5e5;
-}
-.btn--grey:active {
-background-color: #d5d5d5;
-box-shadow: inset 0 2px 0 #b5b5b5;
-}
+  .btn--grey {
+    color: #000000;
+    background: #f1f1f1;
+    font-weight: 500;
+  }
+  .btn--grey:hover {
+    background: #e5e5e5;
+  }
+  .btn--grey:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 2px 0 #b5b5b5;
+  }
 
-.btn--long {
-  padding: 10px 70px;
-}
+  .btn--long {
+    padding: 10px 70px;
+  }
 
-.btn--number {
-  padding: 10px 15px;
-}
+  .btn--number {
+    padding: 10px 15px;
+  }
 
-.btn--price {
-  font-size: 18px;
-  padding: 6px 40px;
-}  
+  .btn--price {
+    font-size: 18px;
+    padding: 6px 40px;
+  }  
+
 
 .container {
   margin: 0 auto;
   padding: 0 10px;
   width: 900px;
 }
+
 
 .content-container {
   display: flex;
@@ -103,6 +110,7 @@ box-shadow: inset 0 2px 0 #b5b5b5;
 .gray-line-bottom {
   border-bottom: 2px solid #eeeeee;
 }
+
 
 .logo {
   display: inline-flex;
@@ -227,10 +235,8 @@ box-shadow: inset 0 2px 0 #b5b5b5;
   }
 
 .we-make {
-  display: inline-flex;
-  flex-direction: column;
-  /*flex-grow: 1;*/
-
+  width: 240px;
+  font-size: 15px;
 }
 
 

@@ -81,9 +81,9 @@
 
 	<main>
 		<div class="container">
-			<div class="content-container  gray-line-bottom">
-				<div class="we-make">
-					<img class="we-make__img" src="img/site-index.jpg" alt="Веб-сайты">
+			<section class="we-make content-container  gray-line-bottom">
+				<div class="we-make__item">
+					<img class="we-make__img" src="img/site-index.jpg" alt="Веб-сайты" width="240" height="124">
 					<h3 class="we-make__title">Веб-сайты</h3>
 					<p class="we-make__body">
 						Мир никогда не будет прежним после того как увидит наш сайт!
@@ -91,8 +91,8 @@
 					<a class="btn btn--red" href="#">Заказать</a>
 				</div>
 
-				<div class="we-make">
-					<img class="we-make__img" src="img/application-index.jpg" alt="Приложения">
+				<div class="we-make__item">
+					<img class="we-make__img" src="img/application-index.jpg" alt="Приложения" width="240" height="124">
 					<h3 class="we-make__title">Приложения</h3>
 					<p class="we-make__body">
 						Покорите топ-10 приложений в AppStore и Google Play
@@ -100,46 +100,47 @@
 					<a class="btn  btn--green" href="#">Заказать</a>
 				</div>
 
-				<div class="we-make">
-					<img class="we-make__img" src="img/presentation-index.jpg" alt="Презентации">
+				<div class="we-make__item">
+					<img class="we-make__img" src="img/presentation-index.jpg" alt="Презентации" width="240" height="124">
 					<h3 class="we-make__title">Презентации</h3>
 					<p class="we-make__body">
 						Вы даже не представляете, насколько вы изумительны!
 					</p>
 					<a class="btn btn--yelloy" href="#">Заказать</a>
 				</div>
-			</div>
+			</section>
 
-			<div class="content-container gray-line">
-				<div class="about-us__offer">
+			<article class="about-us gray-line-bottom">
+				<div class="about-us__left">
 				<a name="studio"></a>
-					<h2 class="about-us__offer__title">Мы – маленькая, но гордая 
+					<h2 class="about-us__title">Мы – маленькая, но гордая 
 					<br>дизайн-студия из Краснодара.</h2>
-					<p class="about-us__offer__body">
+					<p class="about-us__body">
 						Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
 					</p>
-					<span class="about-us__offer__list-title">Выполняем заказы на разработку:</span>
-					<ul class="non-standart-list">
+					<span class="about-us__list-title">Выполняем заказы на разработку:</span>
+					<ul class="about-us__list">
 						<li>Веб-сайты любой сложности</li>
 						<li>Мобильные приложения для IOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>
-			  <div class="about-us__how-work">
-					<img class="bout-us__how-work__logo" src="img/logo.png" alt="Nerds" width="187" height="75">
-					<div class="line-for-title">
-						<span class="about-us__how-work__since">Since 2004</span>
+			  <div class="about-us__right">
+					<img class="logo" src="img/logo.png" alt="Nerds" width="187" height="75">
+					<div class="lines-title">
+						<span class="about-us__since">Since 2004</span>
 					</div>
-					<span class="about-us__how-work__title">Как мы работаем:</span>
-					<ul class="non-standart-list">
+					<span class="about-us__list-title">Как мы работаем:</span>
+					<ul class="about-us__list">
 						<li>С самоотдачей 146%</li>
 						<li>Соблюдая сроки на 100%</li>
 						<li>По предоплате 50%</li>
 					</ul>
 				</div>
-			</div>
+			</article>
+
 			<a name="clients"></a>
-			<div class="content-container gray-line">
+			<div class="partners content-container gray-line-bottom">
 				<div class="partners__item">
 					<a href="#">Glukhanko
 						<img src="img/glukhanko.png" alt="Glukhanko">
@@ -159,19 +160,19 @@
 		</div>		
 	</main>
 	<footer class="main-footer">
-	<a name="contacts"></a>
-	<section class="map">	
-			<div class="map__address">			
-				<span class="map__address__title">Nerds desing studio</span>
-				<p class="map__address__body">
-					191186, Санкт-Петербург,
-					ул. Б. Конюшенная, д 19.8<br>
-					тел. +7 (812) 275-75-75
-				</p>
-				<a class="btn map__address__feedback" href="#">Напишите нам</a>
-			</div>
-		</section>
 		<div class="container">
+			<a name="contacts"></a>
+			<section class="address">
+				<div class="addres__wrapper">
+					<span class="address__title">Nerds desing studio</span>
+					<p class="address__body">
+						191186, Санкт-Петербург,
+						ул. Б. Конюшенная, д 19.8<br>
+						тел. +7 (812) 275-75-75
+					</p>
+					<a class="btn address__feedback" href="#">Напишите нам</a>
+				</div>
+			</section>
 			<section class="social flex">
 				<div class="social__buttons">
 					<a class="social__buttons__btn social__buttons__btn_vk" href="#">Вконтакте</a>
@@ -186,21 +187,21 @@
 		</div>
 	</footer>
 	<section class="modal-feedback">
-		<div class="close">Закрыть</div>
-		<form class="modal-feedback__form" action="#" method="post">
-			<div class="modal-feedback-form__name">
+		<div class="modal-feedback__close">Закрыть</div>
+		<form class="feedback-form  modal-feedback__form" action="#" method="post">
+			<div class="feedback-form__user-name">
 				<label for="name">Ваше имя:</label>
 				<input class="text" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
 			</div>
-			<div class="modal-feedback-form__email">
+			<div class="feedback-form__user-email">
 				<label for="email">Ваш e-mail:</label>
 				<input class="text" type="email" name="email" id="email" placeholder="Для отправки ответа">
 			</div>
-			<div class="modal-feedback-form__comment">
+			<div class="feedback-form__user-comment">
 				<label for="coment">Текст письма:</label>
 				<textarea class="text" id="coment" name="coment" placeholder="В свободной форме" rows="4"></textarea>
 			</div>
-			<button class="btn modal-feedback__btn" type="submit">Отправить</button>
+			<button class="btn  feedback-form__btn" type="submit">Отправить</button>
 		</form>
 	</section>
 	<div class="overlay"></div>
