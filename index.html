@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="css/style-test.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style-bem.css">
 
 <title>Nerds Студия Дизаина</title>
@@ -173,38 +172,43 @@
 					<a class="btn address__feedback" href="#">Напишите нам</a>
 				</div>
 			</section>
-			<section class="social flex">
-				<div class="social__buttons">
-					<a class="social__buttons__btn social__buttons__btn_vk" href="#">Вконтакте</a>
-					<a class="social__buttons__btn social__buttons__btn_fb" href="#">Фейсбук</a>
-					<a class="social__buttons__btn social__buttons__btn_inst" href="#">Инстаграм</a>
+			<section class="social content-container">
+				<div class="social__list social-list">
+					<a class="social-link social-link--vk" href="#">Вконтакте</a>
+					<a class="social-link social-link--fb" href="#">Фейсбук</a>
+					<a class="social-link social-link--inst" href="#">Инстаграм</a>
 				</div>
-				<div class="social__be-friend">
+				<div class="social__offer">
 					<h2>Давай дружить, это выгодно!</h2>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</section>
 		</div>
 	</footer>
-	<section class="modal-feedback">
-		<div class="modal-feedback__close">Закрыть</div>
-		<form class="feedback-form  modal-feedback__form" action="#" method="post">
-			<div class="feedback-form__user-name">
-				<label for="name">Ваше имя:</label>
-				<input class="text" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
-			</div>
-			<div class="feedback-form__user-email">
-				<label for="email">Ваш e-mail:</label>
-				<input class="text" type="email" name="email" id="email" placeholder="Для отправки ответа">
-			</div>
-			<div class="feedback-form__user-comment">
-				<label for="coment">Текст письма:</label>
-				<textarea class="text" id="coment" name="coment" placeholder="В свободной форме" rows="4"></textarea>
-			</div>
-			<button class="btn  feedback-form__btn" type="submit">Отправить</button>
-		</form>
-	</section>
-	<div class="overlay"></div>
+	<div class="modal-windows">
+		<section class="modal-feedback">
+			<div class="modal-feedback__close close-window">Закрыть</div>
+			<form class="feedback-form  modal-feedback__form" action="#" method="post">
+			<div class="feedback__top-block">
+					<div class="feedback-form__user-name flex-column">
+						<label for="name">Ваше имя:</label>
+						<input class="feedback-form__text-input" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+					</div>
+					<div class="feedback-form__user-email flex-column">
+						<label for="email">Ваш e-mail:</label>
+						<input class="feedback-form__text-input" type="email" name="email" id="email" placeholder="Для отправки ответа">
+					</div>
+				</div>
+				<div class="feedback-form__user-comment flex-column">
+					<label for="comment">Текст письма:</label>
+					<textarea class="feedback-form__text-input" id="comment" name="comment" placeholder="В свободной форме" rows="4"></textarea>
+				</div>
+
+				<button class="btn  btn--flex  feedback-form__btn" type="submit">Отправить</button>
+			</form>
+		</section>
+		<div class="modal-overlay"></div>
+	</div>	
 	<script src="js/popup.js"></script>
 </body>
 </html>
