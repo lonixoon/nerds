@@ -4,62 +4,60 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../css/style-test.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-bem.css">
 <title>Nerds Студия Дизаина</title>
 </head>
 <body>
-  <header>
+  <header class="page-header">
     <div  class="container">
-      <div class="flex">
+
         <div class="logo">
-          <a href="../index.html">
-            <img src="../img/logo.png" alt="Nerds" width="139" height="56">
-          </a>
+          <a href="../index.html"><img src="../img/logo.png" alt="Nerds" width="139" height="56"></a>
         </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list flex">
-            <li>
-              <a href="../index.html#studio">Студия</a>
+        <nav class="main-menu  main-menu--right">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#studio">Студия</a>
             </li>
-            <li>
-              <a href="../index.html#clients">Клиенты</a>
+            <li class="main-menu__item">
+              <a href="#clients">Клиенты</a>
             </li>
-            <li class="main-menu__list_active">
-              <span>Магазин</span>
+            <li class="main-menu__item">
+              <a href="inner-page/shop.html">Магазин</a>
             </li>
-            <li>
+            <li class="main-menu__item">
               <a href="#contacts">Контакты</a>
             </li>
-            <li>
-              <a class="main-menu__list_card" href="#">Корзина</a>
+            <li class="main-menu__item  main-menu__card  main-menu__item--margin-pading">
+              <a href="#">Корзина</a>
             </li>
           </ul>
-        </nav>        
-      </div>
+        </nav>
+
       <h1 class="h1">Добро пожаловать в магазин
       <br>готовых макетов</h1>
     </div>
   </header>
   <main class="inner-page">
     <div  class="container">
-      <div class="flex">
+      <div class="content-container">
         <form class="find-form">
-          <div class="find-form__price">
-            <span class="find-form__block-title">Стоимость:</span>
-            <div class="find-form__price__range-runner">
-              <span class="find-form__price__range-runner__circle_start"></span>
-              <span class="find-form__price__range-runner__circle_end"></span>
-              <span class="find-form__price__range-runner__line_green"></span>
-              <span class="find-form__price__range-runner__line_grey"></span>
+          <div class="find-form__price flex-column">
+            <span class="find-form__title">Стоимость:</span>
+            <div class="find-form__range-runner">
+              <span class="range-runner__circle  range-runner__circle--min"></span>
+              <span class="range-runner__circle  range-runner__circle--max"></span>
+              <span class="range-runner__line  range-runner__line--green"></span>
+              <span class="range-runner__line  range-runner__line--grey"></span>
             </div>
-            <div class="find-form__price__min-max flex">
-              <label>от<input type="number" name="min" value="0" step="1000"></label>
-              <label>до<input type="number" name="max" value="15000" step="1000"></label>
+            <div class="find-form__price-range flex">
+              <label>от<input type="number" name="min-price" value="0" step="1000"></label>
+              <label>до<input type="number" name="max-price" value="15000" step="1000"></label>
             </div>
           </div>
           
-          <div class="find-form__type radio">
-            <span class="find-form__block-title">Сетка:</span>
+          <div class="find-form__radio flex-column">
+            <span class="find-form__title">Сетка:</span>
 
             <input type="radio" name="grig" value="adeptive" id="adeptive" checked>
             <label for="adeptive">Адаптивная</label>
@@ -70,8 +68,8 @@
             <input type="radio" name="grig" value="flex" id="flex">
             <label for="flex">Резиновая</label>
           </div>
-          <div class="find-form__type checkbox">
-            <span class="find-form__block-title">Особенности:</span>
+          <div class="find-form__checkbox flex-column">
+            <span class="find-form__title">Особенности:</span>
 
             <input type="checkbox" name="slider" id="slider" checked>
             <label for="slider">Слайдер</label>
@@ -191,51 +189,55 @@
     </div>
   </main>
   <footer class="main-footer">
-  <section class="map">
-      <div class="map__address">
-      <a name="contacts">
-        <span class="map__address__title">Nerds desing studio</span>
-        <p class="map__address__body">
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д 19.8<br>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a class="btn map__address__feedback" href="#">Напишите нам</a>
-      </div>
-    </section>
     <div class="container">
-      <section class="social flex">
-        <div class="social__buttons">
-          <a class="social__buttons__btn social__buttons__btn_vk" href="#">Вконтакте</a>
-          <a class="social__buttons__btn social__buttons__btn_fb" href="#">Фейсбук</a>
-          <a class="social__buttons__btn social__buttons__btn_inst" href="#">Инстаграм</a>
+      <a name="contacts"></a>
+      <section class="address">
+        <div class="addres__wrapper">
+          <span class="address__title">Nerds desing studio</span>
+          <p class="address__body">
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д 19.8<br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a class="btn address__feedback" href="#">Напишите нам</a>
         </div>
-        <div class="social__be-friend">
+      </section>
+      <section class="social content-container">
+        <div class="social__list social-list">
+          <a class="social-link social-link--vk" href="#">Вконтакте</a>
+          <a class="social-link social-link--fb" href="#">Фейсбук</a>
+          <a class="social-link social-link--inst" href="#">Инстаграм</a>
+        </div>
+        <div class="social__offer">
           <h2>Давай дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </div>
   </footer>
-  <section class="modal-feedback">
-    <div class="close">Закрыть</div>
-    <form class="modal-feedback__form" action="#" method="post">
-      <div class="modal-feedback-form__name">
-        <label for="name">Ваше имя:</label>
-        <input class="text" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
-      </div>
-      <div class="modal-feedback-form__email">
-        <label for="email">Ваш e-mail:</label>
-        <input class="text" type="email" name="email" id="email" placeholder="Для отправки ответа">
-      </div>
-      <div class="modal-feedback-form__comment">
-        <label for="coment">Текст письма:</label>
-        <textarea class="text" id="coment" name="coment" placeholder="В свободной форме" rows="4"></textarea>
-      </div>
-      <button class="btn modal-feedback__btn" type="submit">Отправить</button>
-    </form>
-  </section>
-  <div class="overlay"></div>
-  <script src="../js/popup.js"></script>
+  <div class="modal-windows">
+    <section class="modal-feedback">
+      <div class="modal-feedback__close close-window">Закрыть</div>
+      <form class="feedback-form  modal-feedback__form" action="#" method="post">
+      <div class="feedback__top-block">
+          <div class="feedback-form__user-name flex-column">
+            <label for="name">Ваше имя:</label>
+            <input class="feedback-form__text-input" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+          </div>
+          <div class="feedback-form__user-email flex-column">
+            <label for="email">Ваш e-mail:</label>
+            <input class="feedback-form__text-input" type="email" name="email" id="email" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <div class="feedback-form__user-comment flex-column">
+          <label for="comment">Текст письма:</label>
+          <textarea class="feedback-form__text-input" id="comment" name="comment" placeholder="В свободной форме" rows="4"></textarea>
+        </div>
+        <button class="btn  feedback-form__btn" type="submit">Отправить</button>
+      </form>
+    </section>
+    <div class="modal-overlay"></div>
+  </div>  
+  <script src="js/popup.js"></script>
 </body>
 </html>
