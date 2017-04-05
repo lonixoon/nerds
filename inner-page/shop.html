@@ -4,62 +4,58 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../css/style-test.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-bem.css">
 <title>Nerds Студия Дизаина</title>
 </head>
 <body>
-  <header>
-    <div  class="container">
-      <div class="flex">
+  <header class="page-header">
+    <div class="container">
         <div class="logo">
-          <a href="../index.html">
-            <img src="../img/logo.png" alt="Nerds" width="139" height="56">
-          </a>
+          <a href="../index.html"><img src="../img/logo.png" alt="Nerds" width="139" height="56"></a>
         </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list flex">
-            <li>
+        <nav class="main-menu  main-menu--right">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
               <a href="../index.html#studio">Студия</a>
             </li>
-            <li>
+            <li class="main-menu__item">
               <a href="../index.html#clients">Клиенты</a>
             </li>
-            <li class="main-menu__list_active">
-              <span>Магазин</span>
+            <li class="main-menu__item  main-menu__active">
+              <a>Магазин</a>
             </li>
-            <li>
-              <a href="#contacts">Контакты</a>
+            <li class="main-menu__item">
+              <a href="../index.html#contacts">Контакты</a>
             </li>
-            <li>
-              <a class="main-menu__list_card" href="#">Корзина</a>
+            <li class="main-menu__item  main-menu__card  main-menu__item--margin-pading">
+              <a href="#">Корзина</a>
             </li>
           </ul>
-        </nav>        
-      </div>
-      <h1 class="h1">Добро пожаловать в магазин
+        </nav>
+      <h1 class="page-header__title">Добро пожаловать в магазин
       <br>готовых макетов</h1>
     </div>
   </header>
   <main class="inner-page">
     <div  class="container">
-      <div class="flex">
+      <div class="content-container">
         <form class="find-form">
-          <div class="find-form__price">
-            <span class="find-form__block-title">Стоимость:</span>
-            <div class="find-form__price__range-runner">
-              <span class="find-form__price__range-runner__circle_start"></span>
-              <span class="find-form__price__range-runner__circle_end"></span>
-              <span class="find-form__price__range-runner__line_green"></span>
-              <span class="find-form__price__range-runner__line_grey"></span>
+          <div class="find-form__block  flex-column">
+            <span class="find-form__title">Стоимость:</span>
+            <div class="find-form__range-runner  range-runner">
+              <span class="range-runner__circle  range-runner__circle--min"></span>
+              <span class="range-runner__circle  range-runner__circle--max"></span>
+              <span class="range-runner__line  range-runner__line--green"></span>
+              <span class="range-runner__line  range-runner__line--grey"></span>
             </div>
-            <div class="find-form__price__min-max flex">
-              <label>от<input type="number" name="min" value="0" step="1000"></label>
-              <label>до<input type="number" name="max" value="15000" step="1000"></label>
+            <div class="find-form__price-range">
+              <label>от<input type="number" name="min-price" value="0" step="1000"></label>
+              <label>до<input type="number" name="max-price" value="15000" step="1000"></label>
             </div>
           </div>
           
-          <div class="find-form__type radio">
-            <span class="find-form__block-title">Сетка:</span>
+          <div class="find-form__block  radio-button flex-column">
+            <span class="find-form__title">Сетка:</span>
 
             <input type="radio" name="grig" value="adeptive" id="adeptive" checked>
             <label for="adeptive">Адаптивная</label>
@@ -70,8 +66,8 @@
             <input type="radio" name="grig" value="flex" id="flex">
             <label for="flex">Резиновая</label>
           </div>
-          <div class="find-form__type checkbox">
-            <span class="find-form__block-title">Особенности:</span>
+          <div class="find-form__block  checkbox flex-column">
+            <span class="find-form__title">Особенности:</span>
 
             <input type="checkbox" name="slider" id="slider" checked>
             <label for="slider">Слайдер</label>
@@ -88,154 +84,158 @@
             <input type="checkbox" name="card" id="card">
             <label for="card">Корзина</label>
           </div>
-          <button type="submit" class="btn btn_grey">Показать</button>
+          <button type="submit" class="btn btn--grey">Показать</button>
         </form>
-        <div class="right-content">
+        <div class="flex-column">
           <div class="sorting">
             <span class="sorting__title">Сортировать:</span>
             <a href="#" class="sorting__type">по цене</a>
-            <a href="#" class="sorting__type sorting__title_active">по типу</a>
+            <a class="sorting__type  sorting__title--active">по типу</a>
             <a href="#" class="sorting__type">по функционалу</a>
-            <span class="sorting__control">
-              <a href="#" class="sorting__control__from-big">от </a>
-              <a href="#" class="sorting__control__from-small sorting__control__from-small_active">от большего</a>
+            <span class="sorting__min-max">
+              <a href="#" class="sorting__max">от </a>
+              <a href="#" class="sorting__min  sorting__min--active">от большего</a>
             </span>
           </div>
-          <section class="production flex">
+          <section class="production production--position-item">
             <div class="production__item">
-              <img class="production__item__img" src="../img/shop_aviator.jpg" width="240" height="240">
-              <div class="production__item__header">
-                <span class="production__item__header__circle"></span>
+              <img class="production__img" src="../img/shop_aviator.jpg" width="240" height="240" alt="Aviator">
+              <div class="production__header">
+                <span class="production__circle-in-header"></span>
               </div>
-              <div class="production__item__body">
-                <span class="production__item__body__title">Aviator</span>
+              <div class="production__body">
+                <span class="production__title">Aviator</span>
                 <p>Одностраничный макет с авторским дизайном</p>
-                <a class="btn btn_price" href="#">8000 р.</a>
+                <a class="btn  btn--red  btn--price" href="#">8000 р.</a>
               </div>
             </div>
 
             <div class="production__item">
-              <img class="production__item__img" src="../img/shop-sunset.jpg" width="240" height="240">
-              <div class="production__item__header">
-                <span class="production__item__header__circle"></span>
+              <img class="production__img" src="../img/shop-sunset.jpg" width="240" height="240" alt="Sunset">
+              <div class="production__header">
+                <span class="production__circle-in-header"></span>
               </div>
-              <div class="production__item__body">
-                <span class="production__item__body__title">Sunset</span>
+              <div class="production__body">
+                <span class="production__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">10000 р.</a>
+                <a class="btn  btn--red  btn--price" href="#">10000 р.</a>
               </div>
             </div>
 
             <div class="production__item">
-              <img class="production__item__img" src="../img/shop-forte.jpg" width="240" height="240">
-              <div class="production__item__header">
-                <span class="production__item__header__circle"></span>
+              <img class="production__img" src="../img/shop-forte.jpg" width="240" height="240">
+              <div class="production__header">
+                <span class="production__circle-in-header"></span>
               </div>
-              <div class="production__item__body">
-                <span class="production__item__body__title">Sunset</span>
+              <div class="production__body">
+                <span class="production__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">12000 р.</a>
+                <a class="btn  btn--red  btn--price" href="#">12000 р.</a>
               </div>
             </div>
 
             <div class="production__item">
-              <img class="production__item__img" src="../img/shop-thai.jpg" width="240" height="240">
-              <div class="production__item__header">
-                <span class="production__item__header__circle"></span>
+              <img class="production__img" src="../img/shop-thai.jpg" width="240" height="240">
+              <div class="production__header">
+                <span class="production__circle-in-header"></span>
               </div>
-              <div class="production__item__body">
-                <span class="production__item__body__title">Sunset</span>
+              <div class="production__body">
+                <span class="production__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">11000 р.</a>
+                <a class="btn  btn--red  btn--price" href="#">11000 р.</a>
               </div>
             </div>
 
             <div class="production__item">
-              <img class="production__item__img" src="../img/shop-avenue.jpg" width="240" height="240">
-              <div class="production__item__header">
-                <span class="production__item__header__circle"></span>
+              <img class="production__img" src="../img/shop-avenue.jpg" width="240" height="240">
+              <div class="production__header">
+                <span class="production__circle-in-header"></span>
               </div>
-              <div class="production__item__body">
-                <span class="production__item__body__title">Sunset</span>
+              <div class="production__body">
+                <span class="production__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">6000 р.</a>
+                <a class="btn  btn--red  btn--price" href="#">6000 р.</a>
               </div>
             </div>
 
             <div class="production__item">
-              <img class="production__item__img" src="../img/shop-dovetail.jpg" width="240" height="240">
-              <div class="production__item__header">
-                <span class="production__item__header__circle"></span>
+              <img class="production__img" src="../img/shop-dovetail.jpg" width="240" height="240">
+              <div class="production__header">
+                <span class="production__circle-in-header"></span>
               </div>
-              <div class="production__item__body">
-                <span class="production__item__body__title">Sunset</span>
+              <div class="production__body">
+                <span class="production__title">Sunset</span>
                 <p>Интернет-магазин
                 <br>с личныйм кабинетом</p>
-                <a class="btn btn_price" href="#">7000 р.</a>
+                <a class="btn  btn--red  btn--price" href="#">7000 р.</a>
               </div>
             </div>
           </section>
-          <div class="pages-nav">
-            <a href="#" class="btn btn_grey off">Предыдущая</a>
-            <a href="#" class="btn btn_grey btn_number page-nav_active">1</a>
-            <a href="#" class="btn btn_grey btn_number">2</a>
-            <a href="#" class="btn btn_grey btn_number">3</a>
-            <a href="#" class="btn btn_grey">Следующая</a>
+          <div class="pages-list">
+            <a href="#" class="btn  btn--grey  btn--not-dispay">Предыдущая</a>
+            <a class="btn  btn--grey  btn--number  pages-list--active">1</a>
+            <a href="#" class="btn  btn--grey  btn--number">2</a>
+            <a href="#" class="btn  btn--grey  btn--number">3</a>
+            <a href="#" class="btn  btn--grey">Следующая</a>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer class="main-footer">
-  <section class="map">
-      <div class="map__address">
-      <a name="contacts">
-        <span class="map__address__title">Nerds desing studio</span>
-        <p class="map__address__body">
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д 19.8<br>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a class="btn map__address__feedback" href="#">Напишите нам</a>
-      </div>
-    </section>
     <div class="container">
-      <section class="social flex">
-        <div class="social__buttons">
-          <a class="social__buttons__btn social__buttons__btn_vk" href="#">Вконтакте</a>
-          <a class="social__buttons__btn social__buttons__btn_fb" href="#">Фейсбук</a>
-          <a class="social__buttons__btn social__buttons__btn_inst" href="#">Инстаграм</a>
+      <a name="contacts"></a>
+      <section class="address">
+        <div class="address__wrapper">
+          <span class="address__title">Nerds desing studio</span>
+          <p class="address__body">
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д 19.8<br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a class="btn  btn--red  btn--width100  address__feedback" href="#">Напишите нам</a>
         </div>
-        <div class="social__be-friend">
-          <h2>Давай дружить, это выгодно!</h2>
+      </section>
+      <section class="social content-container">
+        <div class="social__list social-list">
+          <a class="social-link social-link--vk" href="#">Вконтакте</a>
+          <a class="social-link social-link--fb" href="#">Фейсбук</a>
+          <a class="social-link social-link--inst" href="#">Инстаграм</a>
+        </div>
+        <div class="social__offer">
+          <h2 class="social__title">Давай дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </div>
   </footer>
-  <section class="modal-feedback">
-    <div class="close">Закрыть</div>
-    <form class="modal-feedback__form" action="#" method="post">
-      <div class="modal-feedback-form__name">
-        <label for="name">Ваше имя:</label>
-        <input class="text" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
-      </div>
-      <div class="modal-feedback-form__email">
-        <label for="email">Ваш e-mail:</label>
-        <input class="text" type="email" name="email" id="email" placeholder="Для отправки ответа">
-      </div>
-      <div class="modal-feedback-form__comment">
-        <label for="coment">Текст письма:</label>
-        <textarea class="text" id="coment" name="coment" placeholder="В свободной форме" rows="4"></textarea>
-      </div>
-      <button class="btn modal-feedback__btn" type="submit">Отправить</button>
-    </form>
-  </section>
-  <div class="overlay"></div>
+  <div class="modal-windows">
+    <section class="modal-feedback">
+      <div class="modal-feedback__close close-window">Закрыть</div>
+      <form class="feedback-form  modal-feedback__form" action="#" method="post">
+      <div class="feedback__top-block">
+          <div class="feedback-form__user-name  flex-column">
+            <label for="name">Ваше имя:</label>
+            <input class="feedback-form__text-input" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+          </div>
+          <div class="feedback-form__user-email  flex-column">
+            <label for="email">Ваш e-mail:</label>
+            <input class="feedback-form__text-input" type="email" name="email" id="email" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <div class="feedback-form__user-comment  flex-column">
+          <label for="comment">Текст письма:</label>
+          <textarea class="feedback-form__text-input" id="comment" name="comment" placeholder="В свободной форме" rows="4"></textarea>
+        </div>
+        <button class="btn  btn--red  btn--width100  feedback-form__btn" type="submit">Отправить</button>
+      </form>
+    </section>
+    <div class="modal-overlay"></div>
+  </div>  
   <script src="../js/popup.js"></script>
 </body>
 </html>
